@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    background-color: rgb(25, 58, 91);
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu {
+    width: 100px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#menu:hover {
+    width: 285px;
+}

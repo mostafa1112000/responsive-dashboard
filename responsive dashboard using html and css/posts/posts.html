@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>posts</title>
+    <link rel="stylesheet" href="posts.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body style="background-color: #000011">
+    <div class="menu" id="menu">
+      <ul>
+        <li class="profile">
+          <div class="img-box">
+            <img src="../images/user-200x300.webp" alt="profile" />
+          </div>
+          <h2>mustafa</h2>
+        </li>
+        <li>
+          <a href="../index.html" class="active">
+            <i class="fas fa-home"></i>
+            <p>Dashboard</p>
+          </a>
+        </li>
+        <li>
+          <a href="../clinet/clint.html">
+            <i class="fas fa-user-group"></i>
+            <p>clients</p>
+          </a>
+        </li>
+        <li>
+          <a href="../proudcts/proudcts.html">
+            <i class="fas fa-table"></i>
+            <p>proudcts</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="posts.html">
+            <i class="fas fa-pen"></i>
+            <p>posts</p>
+          </a>
+        </li>
+        <li>
+          <a href="favorite.html">
+            <i class="fas fa-star"></i>
+            <p>favorite</p>
+          </a>
+        </li>
+
+        <li class="log-out">
+          <a href="../index.html">
+            <i class="fas fa-sign-out"></i>
+            <p>Log Out</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container py-4">
+      <h2 class="mb-4">Add New Post</h2>
+      <form id="postForm" class="mb-4">
+        <input
+          type="text"
+          id="title"
+          class="form-control mb-2"
+          placeholder="Post Title"
+          required
+        />
+        <textarea
+          id="content"
+          class="form-control mb-2"
+          placeholder="Post Content"
+          required
+        ></textarea>
+        <input
+          type="file"
+          id="imageInput"
+          class="form-control mb-2"
+          accept="image/*"
+        />
+        <button type="submit" class="btn btn-primary">Add Post</button>
+        <a href="favorite.html" class="btn btn-outline-success"
+          >View Favorites</a
+        >
+      </form>
+
+      <div id="postsContainer" class="d-flex flex-wrap"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
